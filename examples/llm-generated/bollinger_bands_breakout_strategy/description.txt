@@ -1,0 +1,1 @@
+The Bollinger Bands strategy has been corrected by calculating the standard deviation manually and ensuring all variables are used properly.

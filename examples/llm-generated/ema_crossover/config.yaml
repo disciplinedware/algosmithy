@@ -1,0 +1,41 @@
+backtest:
+  max_parallel_runs: 10
+
+  environment:
+    start_date: "2025-03-01T00:00:00Z"
+    end_date: "2025-03-31T00:00:00Z"
+
+  tests:
+
+    ema_crossover:
+      optimizer:
+        method: "grid"
+        parameters:
+          short_window:
+            values: [ 12 ]
+          long_window:
+            values: [ 26 ]
+          signal_window:
+            values: [ 9 ]
+          pair:
+            values: ["bybit:ETHUSDT", "bybit:BTCUSDT"]
+          timeframe:
+            values: ["5m", "1h"]
+
+      strategies:
+        - class: "ema_crossover"
+          system_params:
+            base_currency: "USDT"
+            initial_position:
+              USDT: "1000.0"
+              ETH: "0.1"
+            subscriptions:
+              - type: candles
+                pair: $pair
+                timeframe: $timeframe
+          params:
+            pair: $pair
+            short_window: $short_window
+            long_window: $long_window
+            signal_window: $signal_window
+            executor: trailing_smart

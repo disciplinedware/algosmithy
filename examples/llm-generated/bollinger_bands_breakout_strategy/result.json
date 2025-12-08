@@ -1,0 +1,205 @@
+[
+  {
+    "test_run_name": "bollinger_bands_breakout_strategy",
+    "combination_results": [
+      {
+        "environment": {
+          "StartDate": "2025-04-01T00:00:00Z",
+          "EndDate": "2025-04-30T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_bollinger_bands_breakout_strategy": {
+            "strategy_id": "strategy_0_bollinger_bands_breakout_strategy",
+            "config": {
+              "Class": "bollinger_bands_breakout_strategy",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:ETHUSDT",
+                    "timeframe": "1h",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "pair": "bybit:ETHUSDT",
+                "stddev": 2,
+                "window_size": 20
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "eth": "0",
+              "usdt": "1179.604216"
+            },
+            "net_profit": "0",
+            "net_profit_pct": "0",
+            "total_trades": 2,
+            "winning_trades": 0,
+            "win_rate_pct": "0",
+            "avg_trade_profit": "0"
+          }
+        },
+        "error": ""
+      },
+      {
+        "environment": {
+          "StartDate": "2025-04-01T00:00:00Z",
+          "EndDate": "2025-04-30T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_bollinger_bands_breakout_strategy": {
+            "strategy_id": "strategy_0_bollinger_bands_breakout_strategy",
+            "config": {
+              "Class": "bollinger_bands_breakout_strategy",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:BTCUSDT",
+                    "timeframe": "1h",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "pair": "bybit:BTCUSDT",
+                "stddev": 2,
+                "window_size": 20
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "btc": "0",
+              "eth": "0.1",
+              "usdt": "962.56100660095218902730444"
+            },
+            "net_profit": "-37.43899339904781097269556",
+            "net_profit_pct": "0",
+            "total_trades": 3,
+            "winning_trades": 0,
+            "win_rate_pct": "0",
+            "avg_trade_profit": "-24.9593289326985406"
+          }
+        },
+        "error": ""
+      },
+      {
+        "environment": {
+          "StartDate": "2025-04-01T00:00:00Z",
+          "EndDate": "2025-04-30T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_bollinger_bands_breakout_strategy": {
+            "strategy_id": "strategy_0_bollinger_bands_breakout_strategy",
+            "config": {
+              "Class": "bollinger_bands_breakout_strategy",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:ETHUSDT",
+                    "timeframe": "5m",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "pair": "bybit:ETHUSDT",
+                "stddev": 2,
+                "window_size": 20
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "eth": "0",
+              "usdt": "1134.446598581102235752996782"
+            },
+            "net_profit": "-35.9909991616405610135088290683951761766364",
+            "net_profit_pct": "0",
+            "total_trades": 53,
+            "winning_trades": 0,
+            "win_rate_pct": "0",
+            "avg_trade_profit": "-13.1067174213646037"
+          }
+        },
+        "error": ""
+      },
+      {
+        "environment": {
+          "StartDate": "2025-04-01T00:00:00Z",
+          "EndDate": "2025-04-30T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_bollinger_bands_breakout_strategy": {
+            "strategy_id": "strategy_0_bollinger_bands_breakout_strategy",
+            "config": {
+              "Class": "bollinger_bands_breakout_strategy",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:BTCUSDT",
+                    "timeframe": "5m",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "pair": "bybit:BTCUSDT",
+                "stddev": 2,
+                "window_size": 20
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "btc": "0",
+              "eth": "0.1",
+              "usdt": "981.75961849459730665745175"
+            },
+            "net_profit": "-18.24038150540269334254825",
+            "net_profit_pct": "0",
+            "total_trades": 36,
+            "winning_trades": 29,
+            "win_rate_pct": "80.55555555555556",
+            "avg_trade_profit": "1.83492993384894"
+          }
+        },
+        "error": ""
+      }
+    ]
+  }
+]

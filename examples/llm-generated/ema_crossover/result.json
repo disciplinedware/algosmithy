@@ -1,0 +1,209 @@
+[
+  {
+    "test_run_name": "ema_crossover",
+    "combination_results": [
+      {
+        "environment": {
+          "StartDate": "2025-03-01T00:00:00Z",
+          "EndDate": "2025-03-31T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_ema_crossover": {
+            "strategy_id": "strategy_0_ema_crossover",
+            "config": {
+              "Class": "ema_crossover",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:ETHUSDT",
+                    "timeframe": "1h",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "long_window": 26,
+                "pair": "bybit:ETHUSDT",
+                "short_window": 12,
+                "signal_window": 9
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "eth": "0",
+              "usdt": "1074.684389487276323904927618"
+            },
+            "net_profit": "-139.3794417029138291821271805934324128282459",
+            "net_profit_pct": "0",
+            "total_trades": 57,
+            "winning_trades": 15,
+            "win_rate_pct": "26.31578947368421",
+            "avg_trade_profit": "-28.6612917940624789"
+          }
+        },
+        "error": ""
+      },
+      {
+        "environment": {
+          "StartDate": "2025-03-01T00:00:00Z",
+          "EndDate": "2025-03-31T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_ema_crossover": {
+            "strategy_id": "strategy_0_ema_crossover",
+            "config": {
+              "Class": "ema_crossover",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:BTCUSDT",
+                    "timeframe": "1h",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "long_window": 26,
+                "pair": "bybit:BTCUSDT",
+                "short_window": 12,
+                "signal_window": 9
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "btc": "0",
+              "eth": "0.1",
+              "usdt": "1049.786060775831484348902887"
+            },
+            "net_profit": "49.786060775831484348902887",
+            "net_profit_pct": "0",
+            "total_trades": 46,
+            "winning_trades": 45,
+            "win_rate_pct": "97.82608695652174",
+            "avg_trade_profit": "66.472599568318464"
+          }
+        },
+        "error": ""
+      },
+      {
+        "environment": {
+          "StartDate": "2025-03-01T00:00:00Z",
+          "EndDate": "2025-03-31T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_ema_crossover": {
+            "strategy_id": "strategy_0_ema_crossover",
+            "config": {
+              "Class": "ema_crossover",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:ETHUSDT",
+                    "timeframe": "5m",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "long_window": 26,
+                "pair": "bybit:ETHUSDT",
+                "short_window": 12,
+                "signal_window": 9
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "eth": "0.2924287594863158169",
+              "usdt": "-0.000000000000046745497795"
+            },
+            "net_profit": "-403.1936445056353379273279953183525184730894",
+            "net_profit_pct": "0",
+            "total_trades": 692,
+            "winning_trades": 21,
+            "win_rate_pct": "3.03468208092486",
+            "avg_trade_profit": "-235.892805045379965"
+          }
+        },
+        "error": ""
+      },
+      {
+        "environment": {
+          "StartDate": "2025-03-01T00:00:00Z",
+          "EndDate": "2025-03-31T00:00:00Z"
+        },
+        "strategy_results": {
+          "strategy_0_ema_crossover": {
+            "strategy_id": "strategy_0_ema_crossover",
+            "config": {
+              "Class": "ema_crossover",
+              "SystemParams": {
+                "base_currency": "USDT",
+                "initial_position": {
+                  "eth": "0.1",
+                  "usdt": "1000.0"
+                },
+                "subscriptions": [
+                  {
+                    "pair": "bybit:BTCUSDT",
+                    "timeframe": "5m",
+                    "type": "candles"
+                  }
+                ]
+              },
+              "Params": {
+                "executor": "trailing_smart",
+                "long_window": 26,
+                "pair": "bybit:BTCUSDT",
+                "short_window": 12,
+                "signal_window": 9
+              }
+            },
+            "initial_cash": {
+              "eth": "0.1",
+              "usdt": "1000"
+            },
+            "final_cash": {
+              "btc": "0.0065076339351494673",
+              "eth": "0.1",
+              "usdt": "-0.000000000001850042379814"
+            },
+            "net_profit": "-463.764449595602511822379814",
+            "net_profit_pct": "0",
+            "total_trades": 703,
+            "winning_trades": 20,
+            "win_rate_pct": "2.84495021337127",
+            "avg_trade_profit": "-223.8762911595415021"
+          }
+        },
+        "error": ""
+      }
+    ]
+  }
+]

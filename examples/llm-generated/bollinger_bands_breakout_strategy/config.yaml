@@ -1,0 +1,38 @@
+backtest:
+  max_parallel_runs: 10
+
+  environment:
+    start_date: "2025-04-01T00:00:00Z" # Testing for the following month
+    end_date: "2025-04-30T00:00:00Z"
+
+  tests:
+
+    bollinger_bands_breakout_strategy:
+      optimizer:
+        method: "grid"
+        parameters:
+          window_size:
+            values: [20]
+          stddev:
+            values: [2.0]
+          pair:
+            values: ["bybit:ETHUSDT", "bybit:BTCUSDT"]
+          timeframe:
+            values: ["5m", "1h"]
+
+      strategies:
+        - class: "bollinger_bands_breakout_strategy"
+          system_params:
+            base_currency: "USDT"
+            initial_position:
+              USDT: "1000.0"
+              ETH: "0.1"
+            subscriptions:
+              - type: candles
+                pair: $pair
+                timeframe: $timeframe
+          params:
+            pair: $pair
+            window_size: $window_size
+            stddev: $stddev
+            executor: trailing_smart
