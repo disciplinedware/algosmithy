@@ -2,7 +2,7 @@
 
 **Algosmithy is a deterministic Go-based engine that drives a fully autonomous agentic loop** — where an LLM generates a strategy, executes it in isolated sandboxes, evaluates the results, and iterates until performance targets are met.
 
-**What Algosmithy is for**
+**What Algosmithy is for**  
 Algosmithy is designed for quant teams that need to **accelerate and automate the strategy-development workflow** — replacing manual coding and fragmented backtesting tools with a unified, deterministic system that generates, runs, evaluates, and iterates strategies at high throughput.
 
 If your bottlenecks are slow R&D, inconsistent results, manual experimentation, or scattered tooling, Algosmithy turns strategy research into a **continuous, reproducible, high-velocity experimentation pipeline**.
